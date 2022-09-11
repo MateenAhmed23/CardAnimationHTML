@@ -1,0 +1,77 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    /* overflow: scroll; */
+    box-sizing: border-box;
+
+}
+
+h1{
+    text-align: center;
+    padding: 1rem;
+}
+
+.container{
+    height: auto;
+    /* background-color: cadetblue; */
+    margin: 10rem;
+    /* border: 1px solid black; */
+}
+
+.cards{
+    display: flex;
+    /* flex-wrap: nowrap; */
+    /* overflow: scroll; */
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /* scroll-behavior: smooth; */
+    padding: 1rem 0 1rem 3rem;
+    /* gap: -rem; */
+    /* background-color: black; */
+    /* margin-left: -1rem; */
+    flex-shrink: 0;
+    border-radius: 3px;
+    margin-left: 5px;
+}
+
+.card{
+    border-radius: 30px;
+    padding: 2rem;
+    height: 23rem;
+    width: 15rem;
+    margin-left: -2rem;
+    /* background-color: black; */
+    background-image: linear-gradient(to right, black, gray);
+    flex-shrink: 0;
+    color: white;
+    transition: all 0.2s;
+
+}
+.card:hover{
+    margin-right: 4rem;
+    rotate: 10deg;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: whitesmoke; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: white; 
+  }
